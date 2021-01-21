@@ -1,0 +1,17 @@
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\ProiectDAW.deps.json
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\ProiectDAW.runtimeconfig.json
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\ProiectDAW.runtimeconfig.dev.json
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\ProiectDAW.dll
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\bin\Debug\netcoreapp2.1\ProiectDAW.pdb
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.csprojAssemblyReference.cache
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.AssemblyInfoInputs.cache
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.AssemblyInfo.cs
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.csproj.CoreCompileInputs.cache
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.RazorAssemblyInfo.cache
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.RazorAssemblyInfo.cs
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.RazorTargetAssemblyInfo.cache
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.dll
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.pdb
+C:\Users\Marius\Desktop\DAW\ProiectMDS\ProiectMDS\obj\Debug\netcoreapp2.1\ProiectDAW.genruntimeconfig.cache
