@@ -1,0 +1,46 @@
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: center;
+  color:  violet;
+}
+
+.container {
+  padding-bottom: 20px;
+}
+
+#text {
+    font-size: 25px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    border-bottom: none;
+    padding-top: 5px;
+    background-color: violet;
+}
+
+input[type='radio'] {
+  transform: scale(1.5);
+  margin-right: 5px;
+}
+
+.form-container {
+  max-width: 30%;
+  text-align: center;
+  margin: auto;
+  background-color: violet;
+  border-top-color: white !important;
+  padding-bottom: 3rem;
+}
+
+button.btn.btn-block {
+  width: 40%;
+  margin: auto;
+}
+
+form {
+      padding: 3rem;
+    padding-bottom: 0;
+}

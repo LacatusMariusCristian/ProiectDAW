@@ -1,0 +1,44 @@
+.detail {
+  font-size: 25px;
+  font-weight: 400;
+}
+#p1 {
+  padding-left: 20px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 5px;
+  height:79px;
+  max-height: 79px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+#container-content {
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.add {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 22px;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.view .mask {
+  height: 88%;
+}

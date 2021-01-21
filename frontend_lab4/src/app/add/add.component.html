@@ -1,0 +1,51 @@
+<h1>Adauga Mood</h1>
+<div class="container">
+
+<div id="text">
+  <p style="display: inline; margin-right: 10px; ">Add new</p>
+  <div *ngFor="let option of options" style="display: inline; margin-left:10px; ">
+       <input type="radio" name="option" [value]="option" (change)="radioChange($event)" checked="checked"><i>{{option}}</i>
+  </div>
+</div>
+
+<div class="form-container border ">
+
+  <form class="text-center " [formGroup]="addSongForm"  *ngIf="selectedOption === 'Song'">
+
+    <input type="text"  class="form-control mb-4" placeholder="Name" formControlName="name"
+       autocomplete="off"   >
+
+    <input type="text"  class="form-control mb-4" placeholder="Link" formControlName="style"
+         autocomplete="off"  >
+  </form>
+
+
+
+
+  
+
+  <form class="text-center  " [formGroup]="addAlbumForm"  *ngIf="selectedOption === 'Album'">
+
+    <input type="text"  class="form-control mb-4" placeholder="Name" formControlName="name"
+         autocomplete="off" >
+
+    <input type="number"  class="form-control mb-4" placeholder="Year" formControlName="releaseYear"
+          autocomplete="off" >
+
+
+    <input type="number"  class="form-control mb-4" placeholder="PlaylistID" formControlName="studioId"
+          autocomplete="off" >
+
+    <input type="text"  class="form-control mb-4" placeholder="1-new, 2-old, 3-mix" formControlName="artistId"
+          autocomplete="off" >
+
+    <input type="text"  class="form-control mb-4" placeholder="SongId1, SongId2" formControlName="songId"
+          autocomplete="off" >
+    
+  </form>
+  <button mdbBtn color="white" block="true"  type="submit" (click)="add()"  style="background-color: darkcyan;">Add</button>
+    <p *ngIf="success" style="color: green; font-size: 22px;">Added successfully</p>
+    <p *ngIf="success === false" style="color: blue; font-size: 22px;">Something went wrong</p>
+</div>
+</div>
+

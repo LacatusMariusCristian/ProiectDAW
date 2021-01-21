@@ -1,0 +1,14 @@
+.modal-content{
+    background-color:#a93c88;
+}
+
+.btn-primary{
+    background-color:white;
+    border-color: white;
+    color: black;
+}
+.btn-outline-primary{
+    background-color:white;
+    border-color: white;
+    color: black;
+}

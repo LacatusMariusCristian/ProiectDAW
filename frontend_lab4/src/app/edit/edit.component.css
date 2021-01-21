@@ -1,0 +1,25 @@
+.table {
+  width: 70%;
+  margin: 20px;
+  background-color: violet;
+}
+
+.container {
+  padding: 30px;
+  padding-left: 100px;
+  background-color: violet;
+}
+
+p {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: violet;
+  
+}
+

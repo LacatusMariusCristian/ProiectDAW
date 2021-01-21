@@ -1,0 +1,33 @@
+<nav class="navbar navbar-light bg-light">
+  <a routerLink="/" class="navbar-brand">
+    <h2 class="nav-link">VinylShop</h2>
+  </a>
+
+  <div>
+    <ul class="nav navbar">
+      <li>
+        <a
+          class="nav-link"
+           (click)="openCart()"
+               
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active-page">
+        <a class="nav-link" routerLink="/add">
+          <i class="fas fa-plus-circle"></i>
+        </a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active-page">
+        <a class="nav-link" routerLink="/edit">
+          <i class="fas fa-edit"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<app-cart-modal #cartModal></app-cart-modal>

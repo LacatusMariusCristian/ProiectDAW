@@ -1,0 +1,18 @@
+<div bsModal class=" row modal fade" #editArtistModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="editArtistModal"
+     aria-hidden="true" (onHide)=" this.editArtistForm.reset();">
+  <div class="col-md-6 col-sm-6 col-lg-4 mx-auto my-4" *ngIf="editArtistForm">
+
+    <form class="text-center border border-light p-5 " 
+    [formGroup]="editArtistForm"  (ngSubmit)="editArtist()">
+
+      <p class="h4 mb-4">Edit Artist</p>
+      <input type="text"  class="form-control mb-4"  formControlName="name" placeholder="Enter name" autocomplete="off">
+      <input type="text"  class="form-control mb-4"  formControlName="nationality" placeholder="Enter nationality" autocomplete="off">      
+      <button mdbBtn color="danger" block="true" class="my-4" type="submit" [disabled]="editArtistForm.invalid || editArtistForm.pristine">Edit</button>
+
+    </form>
+
+  </div>
+</div>
+
+

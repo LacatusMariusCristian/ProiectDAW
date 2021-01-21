@@ -1,0 +1,69 @@
+#modal {
+  background-color:black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+img {
+  max-width: 100%;
+  margin-top: 30px;
+  max-height: 80%;
+  margin-bottom: 30px;
+}
+
+.details p {
+  display: inline;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.details {
+  padding: 30px;
+  padding-left: 0;
+  width: 100%;
+}
+
+#studio {
+  margin-left: 50px;
+  display: block;
+}
+
+ol {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+button {
+  text-transform: initial;
+  font-style: italic;
+  display: block;
+  font-size: 15px;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+}
+
+span {
+  display: block;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+
+}
+
+.button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+#message {
+  font-size: 20px;
+  font-weight: 400;
+  color: #a93c88;
+  font-style: italic;
+}

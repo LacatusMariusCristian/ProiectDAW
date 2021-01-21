@@ -1,0 +1,80 @@
+.navbar {
+  border-bottom: 4px solid #a93c88;
+  border-radius: 10px;
+  background-color: black !important;
+  
+  
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.btn {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+ul {
+  border: none !important;
+  font-size: 20px;
+}
+
+nav a {
+  color:white;
+  transition: background 1s ease-in-out;
+  border-bottom: none; /* define a light blue border for the link */
+}
+
+.nav-item a:hover {
+  color: black;
+  background: #989898;
+  border: 1px solid transparent;
+  transition: background 0.3s ease-in-out;
+}
+
+li.nav:hover {
+  background-color: #989898;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.active-page {
+  background: #989898;
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+}
+
+#orderLabel {
+  font-weight: 400;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+form {
+  font-size: 25px;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
+}
+
+textarea {
+  font-size: 20px;
+}
+
+form p {
+  text-align: left;
+  font-weight: 400;
+}
+
+form ol {
+  text-align: left;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}

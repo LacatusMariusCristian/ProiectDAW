@@ -1,0 +1,46 @@
+<div bsModal class=" row modal fade" #detailModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="detailModal"
+     aria-hidden="true" style="margin-top:200px;">
+  <div class="col-md-6 col-sm-6 col-lg-8 mx-auto my-4" id="modal">
+
+    <div class="container col-lg-12">
+      <div class="row">
+
+        <div class="col-lg-4" style="padding-right:0">
+          <img [src]="album.img" class="img-fluid z-depth-1 rounded">
+        </div>
+   
+      <div class="col-lg-8" style="padding-left:10px">
+        <div class="row">
+          <div class="details">
+          <p *ngFor = "let artist of album.artistName" > {{artist}} ssssss</p>
+          <p> - {{album.name}}</p>
+          <p id="studio">{{studio}}</p>
+
+          <ol>
+            <li *ngFor = "let song of album.songName"> {{song}}</li>
+          </ol>
+
+        </div>
+        </div>
+        <div class="row">
+          <div class="button">
+       
+          <button  type="button" class="btn btn-dark" (click)="addToCart(album)">Add to cart</button>
+         
+        </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+
+</div>
+
+
+  </div>
+
+
+

@@ -1,0 +1,37 @@
+<div class="container">
+  <div>
+    <div id="container-content">
+      <form class="form-inline active-cyan-2 col-4 col-sm-4 px-0 mt-2">
+        <input
+          class="form-control form-control-sm mr-3 w-75 novalidate"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+          name="search"
+          [(ngModel)]="searchText"
+          autocomplete="off"
+        />
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </form>
+
+      <div class="container">
+      
+        <div class="row pl-5">
+          <ng-container *ngFor=" let album of albums; let ind = index">
+            <div class="view col mb-3 mr-3 p-0 hoverable" (click)="showDM(album.id)">
+              <img [src]="album.img" class="img-fluid z-depth-1 rounded" alt="hoverable"/>
+
+              <div class="detail">
+                <p id="p1">{{ album.artistName.toString() }} - {{ album.name }}</p>
+               
+                <p id="p2">{{ album.price }} lei</p>
+              </div>
+            </div>
+            <div class="w-100" *ngIf="ind != 0 && (ind + 1) % 4 == 0"></div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-detail-modal #detailModal></app-detail-modal>

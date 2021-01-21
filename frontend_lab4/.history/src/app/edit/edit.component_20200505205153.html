@@ -1,0 +1,127 @@
+<h1>Edit page</h1>
+<div class="container">
+  <div class="albums">
+  <p>Albums</p>
+  <table class="table table-striped ">
+    <thead>
+    <tr>
+      <th scope="col" style="width:10%">ID</th>
+      <th scope="col" style="width:20%">Name</th>
+      <th scope="col" style="width:10%">Release year</th>
+      <th scope="col" style="width:10%">StudioId</th>
+      <th scope="col" style="width:20%">ArtistName</th>
+      <th scope="col" style="width:20%">SongName</th>
+      <th scope="col" style="width:10%">Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let album of albums;let i=index">
+      <th scope="row">{{album.id}}</th>
+      <td>{{album.name}}</td>
+      <td>{{album.releaseYear}}</td>
+      <td>{{album.studioId}}</td>
+      <td>{{album.artistName}}</td>
+      <td>{{album.songName}}</td>
+      <td><a class=" dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false"></a>
+
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" (click)="showM1(album.id)"><i class="fas fa-pen"></i> Edit</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="deleteAlbum(album.id)"><i class="fas fa-eraser"></i> Delete</a>
+        </div>
+      </td>
+
+
+    </tr>
+
+
+    </tbody>
+  </table>
+
+  </div>
+
+
+
+  <div class="artist">
+    <p>Artists</p>
+    <table class="table table-striped ">
+      <thead>
+      <tr>
+        <th scope="col" style="width:10%">ID</th>
+        <th scope="col" style="width:30%">Name</th>
+        <th scope="col" style="width:20%">Nationality</th>
+        <th scope="col" style="width:10%">Actions</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let artist of artists;let i=index">
+        <th scope="row">{{artist.id}}</th>
+        <td>{{artist.name}}</td>
+        <td>{{artist.nationality}}</td>
+
+        <td><a class=" dropdown-toggle"  id="navbarDropdown2" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false"></a>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" (click)="showM2(artist.id)"><i class="fas fa-pen"></i> Edit</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="deleteArtist(artist.id)" ><i class="fas fa-eraser"></i> Delete</a>
+          </div>
+        </td>
+
+
+      </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <div class="song">
+    <p>Songs</p>
+    <table class="table table-striped " >
+      <thead>
+      <tr>
+        <th scope="col" style="width:10%">ID</th>
+        <th scope="col" style="width:30%">Name</th>
+        <th scope="col" style="width:30%">Style</th>
+        <th scope="col" style="width:10%">Actions</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let song of songs;let i=index">
+        <th scope="row">{{song.id}}</th>
+        <td>{{song.name}}</td>
+        <td>{{song.style}}</td>
+
+
+        <td><a class=" dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false"></a>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" (click)="showM3(song.id)"><i class="fas fa-pen"></i> Edit</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="deleteSong(song.id)"><i class="fas fa-eraser"></i> Delete</a>
+          </div>
+        </td>
+
+
+      </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+</div>
+<app-edit-album-modal #editAlbumModal (change)="onEditFinished($event)" ></app-edit-album-modal>
+<app-edit-song-modal #editSongModal (change)="changonEditFinishedeE($event)" ></app-edit-song-modal>
+<app-edit-artist-modal #editArtistModal (change)="changeE($event)" ></app-edit-artist-modal>
